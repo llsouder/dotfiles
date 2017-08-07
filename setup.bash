@@ -2,12 +2,13 @@
 
 ##setup lein
 mkdir ~/bin
-cd ~/bin
+pushd ~/bin
 curl -O https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
 chmod a+x lein
+popd
 
-mkdir ~/.vim/bundle
-cd ~/.vim/bundle
+mkdir -p ~/.vim/bundle
+pushd ~/.vim/bundle
 #manage my parenthesis please.
 git clone https://github.com/vim-scripts/paredit.vim
 #for commands like :find and gf
@@ -16,4 +17,4 @@ git clone git://github.com/tpope/vim-classpath.git
 git clone https://github.com/guns/vim-clojure-static.git
 #quasi repl!
 git clone git://github.com/tpope/vim-fireplace.git
-
+popd
