@@ -1,4 +1,7 @@
 #!/bin/bash
+#setup pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 ##setup lein
 mkdir ~/bin
@@ -7,7 +10,6 @@ curl -O https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
 chmod a+x lein
 popd
 
-mkdir -p ~/.vim/bundle
 pushd ~/.vim/bundle
 #manage my parenthesis please.
 git clone https://github.com/vim-scripts/paredit.vim
