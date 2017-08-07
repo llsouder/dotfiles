@@ -19,5 +19,5 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 sudo update-alternatives --config javaws
 ```
-##
+##Vim setup
 run setup.bash
