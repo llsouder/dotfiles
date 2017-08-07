@@ -1,6 +1,13 @@
+#!/bin/bash
+
+##setup lein
+mkdir ~/bin
+cd ~/bin
+curl -O https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+chmod a+x lein
+
 mkdir ~/.vim/bundle
 cd ~/.vim/bundle
-
 #manage my parenthesis please.
 git clone https://github.com/vim-scripts/paredit.vim
 #for commands like :find and gf
