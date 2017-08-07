@@ -19,5 +19,10 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 sudo update-alternatives --config javaws
 ```
-##Vim setup
-run setup.bash
+##Vim and lein setup
+```bash
+cp .vimrc ~
+./setup.bash
+```
+
+add ~/bin/  to PATH
